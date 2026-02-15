@@ -2,8 +2,8 @@
 
 WARNING: This repository is a PHP 7.4 compatible fork of [pouler/soundcloud-api](https://github.com/pouler/soundcloud-api).
 
-[![Latest Stable Version](https://poser.pugx.org/pouler/soundcloud-api/v/stable)](https://packagist.org/packages/pouler/soundcloud-api)
-[![Latest Unstable Version](https://poser.pugx.org/pouler/soundcloud-api/v/unstable)](https://packagist.org/packages/pouler/soundcloud-api)
+[![Latest Stable Version](https://poser.pugx.org/pouler/soundcloud-api/v/stable)](https://packagist.org/packages/legacyphpdoctor/pouler_soundcloud-api-php-7-4)
+[![Latest Unstable Version](https://poser.pugx.org/pouler/soundcloud-api/v/unstable)](https://packagist.org/packages/legacyphpdoctor/pouler_soundcloud-api-php-7-4)
 
 # SoundCloud API PHP
 
@@ -17,7 +17,7 @@ This is a PHP wrapper for the [SoundCloud API](https://developers.soundcloud.com
 Install it using [Composer](https://getcomposer.org/):
 
 ```sh
-composer require pouler/soundcloud-api
+composer require legacyphpdoctor/pouler_soundcloud-api-php-7-4
 ```
 
 ```php
@@ -40,3 +40,4 @@ $api->getUser();
 
 var_dump($result);
 ```
+
