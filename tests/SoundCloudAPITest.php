@@ -68,10 +68,14 @@ class SoundCloudAPITest extends TestCase
         $this->client->expects($matcher)
             ->method('apiRequest')
             ->willReturnCallback(function (string $key, string $value) use ($matcher, $expected1, $expected2) {
-                match ($matcher->numberOfInvocations()) {
-                    1 =>  $this->assertEquals($expected1, $value),
-                    2 =>  $this->assertEquals($expected2, $value),
-                };
+                switch ($matcher->numberOfInvocations()) {
+                    case 1:
+                        $this->assertEquals($expected1, $value);
+                        break;
+                    case 2:
+                        $this->assertEquals($expected2, $value);
+                        break;
+                }
             })
             ->willReturn(['OK']);
 
@@ -144,10 +148,14 @@ class SoundCloudAPITest extends TestCase
         $this->client->expects($matcher)
             ->method('apiRequest')
             ->willReturnCallback(function (string $key, string $value) use ($matcher,$expected1, $expected2) {
-                match ($matcher->numberOfInvocations()) {
-                    1 =>  $this->assertEquals($expected1, $value),
-                    2 =>  $this->assertEquals($expected2, $value),
-                };
+                switch ($matcher->numberOfInvocations()) {
+                    case 1:
+                        $this->assertEquals($expected1, $value);
+                        break;
+                    case 2:
+                        $this->assertEquals($expected2, $value);
+                        break;
+                }
             })
             ->willReturn(['OK']);
 

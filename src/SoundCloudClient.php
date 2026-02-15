@@ -136,7 +136,7 @@ class SoundCloudClient
      *
      * @throws SoundCloudAPIException
      */
-    public function apiRequest(string $method, string $service, array $headers = [], mixed $body = null): object|array
+    public function apiRequest(string $method, string $service, array $headers = [], $body = null)
     {
         $url = sprintf(
             '%s/%s',
@@ -184,7 +184,7 @@ class SoundCloudClient
      *
      * @throws SoundCloudAPIException
      */
-    public function urlRequest(string $method, string $service, array $headers = [], mixed $body = null): ?string
+    public function urlRequest(string $method, string $service, array $headers = [], $body = null): ?string
     {
         $url = sprintf(
             '%s/%s',
